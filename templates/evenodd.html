@@ -1,0 +1,23 @@
+{% include "header.html" %}
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="contact-content font1 max-width-1 m-auto">
+        <div class="max-width-1 m-auto mx-1">
+            <h2>Feel Free to Contact Us</h2>
+        </div>
+    </div>
+<br>
+<div class="row">
+    <div class="col-12">
+        <form method="post" >
+            {% csrf_token %}
+            <label>Value1</label>
+            <input type="text" name="num1"/><br>
+            <button type="submit"> Calculate</button>
+            <label> Output</label>
+            <input type="text" value="{{c}}"/>
+        </form>
+    </div>
+</div>
