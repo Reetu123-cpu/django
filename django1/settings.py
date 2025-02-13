@@ -24,8 +24,12 @@ SECRET_KEY = 'django-insecure-4cs5#=6glv1_@&!1_9fk*xx0y%4f_7!#_-zc8*tbt%&)a+jlml
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+  
+ALLOWED_HOSTS = [
+     "django-palvit.onrender.com",
+    "localhost", 
+    "127.0.0.1"
+]
 
 
 # Application definition
@@ -126,19 +130,37 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+# # Default primary key field type
+# # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-STATICFILES_DIRS=[
-    BASE_DIR,'static'
+# STATICFILES_DIRS=[
+#     BASE_DIR,'static'
+# ]
+# MEDIA_ROOT=BASE_DIR /"media"
+# MEDIA_URL="/media/"
+
+
+
+
+
+
+# Static files settings
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')  # Corrected path
 ]
-MEDIA_ROOT=BASE_DIR /"media"
-MEDIA_URL="/media/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Add this line
+
+# Media files (User uploads)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 
 
 EMAIL_HOST='smtp.gmail.com'
