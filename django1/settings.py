@@ -149,26 +149,16 @@ USE_TZ = True
 
 
 
-import os
-
-# Static files (CSS, JavaScript, Images)
-STATIC_URL = '/static/'  # Corrected
-
+# Static files settings
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # Fixed path
+    os.path.join(BASE_DIR, 'static')  # Corrected path
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Add this line
 
-# Static Root for collectstatic (Needed for deployment)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-# Media files (User uploaded content)
-MEDIA_URL = '/media/'  # Ensure trailing slash
+# Media files (User uploads)
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-# Default primary key field type
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
 
 
 
