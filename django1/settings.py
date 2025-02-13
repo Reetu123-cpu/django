@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4cs5#=6glv1_@&!1_9fk*xx0y%4f_7!#_-zc8*tbt%&)a+jlml
 DEBUG = True
 
 ALLOWED_HOSTS = [
-     "django-develop.onrender.com",
+     "django-palvit.onrender.com",
     "localhost", 
     "127.0.0.1"
 ]
