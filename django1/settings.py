@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-4cs5#=6glv1_@&!1_9fk*xx0y%4f_7!#_-zc8*tbt%&)a+jlml
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+  
 ALLOWED_HOSTS = [
      "django-palvit.onrender.com",
     "localhost", 
