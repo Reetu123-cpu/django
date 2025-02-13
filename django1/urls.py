@@ -32,7 +32,7 @@ urlpatterns = [
     # path('newsdetails/<newsid>/', views.newsdetails, name="newsdetails")
     path('newsdetails/<slug>/', views.newsdetails, name="newsdetails"),
     path('saveenquiry/', views.saveenquiry, name="saveenquiry"),
-    path('recipes/', views.recipes, name="recipes")
+    path('recipes/', views.recipes, name="recipes"),
     path('blogpost/', views.blogpost, name='blogpost'),
 
 ]
