@@ -154,6 +154,8 @@ def saveenquiry(request):
         en=contactenquiry(name=name,email=email,phoneno=phoneno,message=message)
         en.save()
     return render(request,'contact.html')
+def blogpost(request):
+    return render(request,"blogpost.html")
 
 def recipes(request):
     if request.method=="POST":
